@@ -14,6 +14,7 @@
 		2B2DC2791E362AF1003E3449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC2771E362AF1003E3449 /* LaunchScreen.storyboard */; };
 		2B2DC2841E362AF1003E3449 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC2831E362AF1003E3449 /* CalculatorTests.swift */; };
 		2B2DC28F1E362AF1003E3449 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC28E1E362AF1003E3449 /* CalculatorUITests.swift */; };
+		2B2DC29F1E363D51003E3449 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC29E1E363D51003E3449 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2B2DC28A1E362AF1003E3449 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2DC28E1E362AF1003E3449 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		2B2DC2901E362AF1003E3449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2DC29E1E363D51003E3449 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,8 @@
 		2B2DC26D1E362AF1003E3449 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				2B2DC26E1E362AF1003E3449 /* AppDelegate.swift */,
-				2B2DC2701E362AF1003E3449 /* ViewController.swift */,
-				2B2DC2721E362AF1003E3449 /* Main.storyboard */,
-				2B2DC2751E362AF1003E3449 /* Assets.xcassets */,
-				2B2DC2771E362AF1003E3449 /* LaunchScreen.storyboard */,
-				2B2DC27A1E362AF1003E3449 /* Info.plist */,
+				2B2DC29D1E363CE0003E3449 /* Domain */,
+				2B2DC29C1E363CB2003E3449 /* Presentation */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -123,6 +121,35 @@
 				2B2DC2901E362AF1003E3449 /* Info.plist */,
 			);
 			path = CalculatorUITests;
+			sourceTree = "<group>";
+		};
+		2B2DC29C1E363CB2003E3449 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2B54FC3D1E36553500E76B76 /* NotModified */,
+				2B2DC2721E362AF1003E3449 /* Main.storyboard */,
+				2B2DC2701E362AF1003E3449 /* ViewController.swift */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		2B2DC29D1E363CE0003E3449 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2B2DC29E1E363D51003E3449 /* Calculator.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		2B54FC3D1E36553500E76B76 /* NotModified */ = {
+			isa = PBXGroup;
+			children = (
+				2B2DC2751E362AF1003E3449 /* Assets.xcassets */,
+				2B2DC26E1E362AF1003E3449 /* AppDelegate.swift */,
+				2B2DC2771E362AF1003E3449 /* LaunchScreen.storyboard */,
+				2B2DC27A1E362AF1003E3449 /* Info.plist */,
+			);
+			name = NotModified;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2DC2711E362AF1003E3449 /* ViewController.swift in Sources */,
+				2B2DC29F1E363D51003E3449 /* Calculator.swift in Sources */,
 				2B2DC26F1E362AF1003E3449 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +533,7 @@
 				2B2DC2951E362AF1003E3449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B2DC2961E362AF1003E3449 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +542,7 @@
 				2B2DC2981E362AF1003E3449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B2DC2991E362AF1003E3449 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +551,7 @@
 				2B2DC29B1E362AF1003E3449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
